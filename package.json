@@ -1,0 +1,26 @@
+{
+  "name": "orange-hrm-pt2-cy",
+  "version": "1.0.0",
+  "description": "In progress",
+  "main": "cypress.config.js",
+  "scripts": {
+    "remove:currentreport": "rm -rf cypress/reports/$(date +'%Y-%m-%d')",
+    "create:currentreport": "mkdir -p cypress/reports/$(date +'%Y-%m-%d')",
+    "pretest": "npm run remove:currentreport && npm run create:currentreport",
+    "scripts": "cypress run",
+    "archive-report": "cp -r cypress/reports/mocha cypress/reports/$(date +'%Y-%m-%d')/ && rm -rf cypress/reports/mocha",
+    "test": "npm run scripts; npm run archive-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^1.6.4"
+  },
+  "dependencies": {
+    "mocha-junit-reporter": "^2.2.1"
+  }
+}
