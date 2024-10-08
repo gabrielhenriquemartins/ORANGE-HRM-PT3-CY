@@ -45,12 +45,17 @@ def create_json_file(file_name, index):
 
 def find_all_files_and_create_the_documentation(directory, i = 2, custom_commands = False):
     if(custom_commands):
-        # Library creation custom commands (Home Page)
-        js_file = os.path.join(directory, 'support/commands.js')
-        output_dir = os.path.join(directory, f"documentation/library/docs/customComands")
+        js_file = os.path.join(directory, 'support/backend/backendCommands.js')
+        output_dir = os.path.join(directory, f"documentation/library/docs/backendCommands")
         delete_and_create_new_folder(output_dir)
-        create_json_file('customComands', i)
-        create_documentation(js_file, 'customComands')
+        create_json_file('backendCommands', i)
+        create_documentation(js_file, 'backendCommands')
+        find_all_files_and_create_the_documentation(directory, i = 3)
+        js_file = os.path.join(directory, 'support/frontend/frontendCommands.js')
+        output_dir = os.path.join(directory, f"documentation/library/docs/frontendCommands")
+        delete_and_create_new_folder(output_dir)
+        create_json_file('frontendCommands', i)
+        create_documentation(js_file, 'frontendCommands')
         find_all_files_and_create_the_documentation(directory, i = 3)
     else:
         directory_js_scripts = os.path.join(directory, 'resources/page_objects')
