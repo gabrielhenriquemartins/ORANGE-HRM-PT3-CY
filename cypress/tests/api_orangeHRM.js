@@ -112,12 +112,12 @@ describe('2 - PIM', () => {
 describe('3 - Leave', () => {
     it('[CY] Add a Leave Type', () => {
         cy.log('OTS-156')
-        onLeavePage.addLeaveType("Carval Oldest")
+        onLeavePage.addLeaveType("New Leave XXX")
     })
 
     it('[CY] Add a Duplicated Leave Type - Expect 422', () => {
         cy.log('OTS-157')
-        onLeavePage.addLeaveType("Carval Oldest", undefined, 422)
+        onLeavePage.addLeaveType("New Leave XXX", undefined, 422)
     })
 
     it('[CY] Delete Leave Type', () => {
