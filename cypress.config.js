@@ -22,7 +22,7 @@ module.exports = defineConfig({
       mochawesomeReporter(on);
 
     },
-    baseUrl: 'https://opensource-demo.orangehrmlive.com/',
+    baseUrl: 'https://opensource-demo.orangehrmlive.com/web/index.php/',
     specPattern: 'cypress/tests/**/*.{js,jsx,ts,tsx}',
     defaultCommandTimeout: 15000,
     pageLoadTimeout: 60000,

@@ -1,13 +1,13 @@
-import { AdminPage, onAdminPage } from "../resources/backend/page_objects/adminPage"
-import { onPimPage } from "../resources/backend/page_objects/pimPage"
-import { onLeavePage } from "../resources/backend/page_objects/leavePage"
-import { onTimePage } from "../resources/backend/page_objects/timePage"
-import { onRecruitmentPage } from "../resources/backend/page_objects/recruitmentPage"
-import { onMyInfoPage } from "../resources/backend/page_objects/myinfoPage"
-import { onPerformancePage } from "../resources/backend/page_objects/performancePage"
-import { onDashboardPage } from "../resources/backend/page_objects/dashboardPage"
-import { onClaimPage } from "../resources/backend/page_objects/claimPage"
-import { onBuzzPage } from "../resources/backend/page_objects/buzzPage"
+import { onAdminPage } from "../resources/backend/page_objects/adminPageAPI"
+import { onPimPage } from "../resources/backend/page_objects/pimPageAPI"
+import { onLeavePage } from "../resources/backend/page_objects/leavePageAPI"
+import { onTimePage } from "../resources/backend/page_objects/timePageAPI"
+import { onRecruitmentPage } from "../resources/backend/page_objects/recruitmentPageAPI"
+import { onMyInfoPage } from "../resources/backend/page_objects/myinfoPageAPI"
+import { onPerformancePage } from "../resources/backend/page_objects/performancePageAPI"
+import { onDashboardPage } from "../resources/backend/page_objects/dashboardPageAPI"
+import { onClaimPage } from "../resources/backend/page_objects/claimPageAPI"
+import { onBuzzPage } from "../resources/backend/page_objects/buzzPageAPI"
 
 describe('1 - Admin', () => {
     it('[CY] Add a Job Title', () => {
