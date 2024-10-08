@@ -58,7 +58,7 @@ def find_all_files_and_create_the_documentation(directory, i = 2, custom_command
         create_documentation(js_file, 'frontendCommands')
         find_all_files_and_create_the_documentation(directory, i = 3)
     else:
-        directory_js_scripts = os.path.join(directory, 'resources/page_objects')
+        directory_js_scripts = os.path.join(directory, 'resources')
         js_files = glob.glob(os.path.join(directory_js_scripts, '**', '*.js'), recursive=True)
 
         # For loop to create the path in all files found
