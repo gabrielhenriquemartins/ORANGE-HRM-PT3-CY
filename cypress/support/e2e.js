@@ -14,7 +14,8 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './backend/backendCommands'
+import './frontend/frontendCommands'
 import 'cypress-mochawesome-reporter/register';
 import 'cypress-file-upload';
 import addContext from "mochawesome/addContext";
